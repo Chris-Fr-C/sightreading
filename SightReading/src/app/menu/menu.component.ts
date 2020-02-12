@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
-import { InstrumentMenu } from '../shared/instrument-menu';
-import { ContextService } from '../shared/context.service';
 import { Router } from '@angular/router';
+import { ContextService } from '../shared/context.service';
+import { InstrumentMenu, InstrumentType } from '../shared/instrument-variables';
 
 @Component({
   templateUrl: './menu.component.html',
@@ -11,8 +11,8 @@ export class MenuComponent implements OnInit {
   LOGO_HEIGHT:number=90;
   LOGO_WIDTH:number=90;
   AVAILABLE_INSTRUMENTS: Array<InstrumentMenu> = [
-    {name:"piano",iconImage:"../assets/images/icon_piano.svg",component:null},
-    {name:"violin",iconImage:"../assets/images/icon_violin.svg",component:null},
+    {type:InstrumentType.PIANO, iconImage:"../assets/images/icon_piano.svg"},
+    {type:InstrumentType.VIOLIN, iconImage:"../assets/images/icon_violin.svg"},
   ];
 
   constructor(private context: ContextService, private router: Router) {}

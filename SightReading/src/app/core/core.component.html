@@ -1,1 +1,6 @@
 <p>core works!</p>
+<div class="div" [ngSwitch]="context.getInstrument().type">
+        <div *ngSwitchCase="typesEnum.PIANO"><app-piano></app-piano></div>
+        <div *ngSwitchCase="typesEnum.VIOLIN"><app-violin></app-violin></div>
+        <div *ngSwitchDefault>Instrument not found : {{context.getInstrument().type}}</div>
+</div>
