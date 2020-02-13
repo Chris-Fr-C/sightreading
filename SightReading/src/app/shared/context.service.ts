@@ -9,7 +9,7 @@ export class ContextService {
 
   constructor() { 
     this.selectedInstrument = null;
-    this.svgImage = "../assets/images/labeled.png";
+    this.svgImage = "../assets/images/staff.svg";
   }
 
   public setInstrument(instrument: InstrumentMenu){
