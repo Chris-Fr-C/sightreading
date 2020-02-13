@@ -1,4 +1,6 @@
 import { Component, OnInit, ChangeDetectionStrategy } from '@angular/core';
+import { ContextService } from 'src/app/shared/context.service';
+import { GameManagerService } from 'src/app/shared/game-manager.service';
 
 @Component({
   selector: 'app-abstract-instrument',
@@ -8,7 +10,8 @@ import { Component, OnInit, ChangeDetectionStrategy } from '@angular/core';
 })
 export class AbstractInstrumentComponent implements OnInit {
 
-  constructor() { }
+
+  constructor(public context:ContextService, public game:GameManagerService) { }
 
   ngOnInit(): void {
   }

@@ -10,6 +10,9 @@ import { Injectable } from '@angular/core';
  */
 export class GameManagerService {
   includeFlatNotes:boolean=true;
-  
+  times: number[];
+  averageTime:number=0.0;
+
   constructor() { }
+
 }

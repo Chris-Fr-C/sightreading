@@ -5,9 +5,11 @@ import { InstrumentMenu } from './instrument-variables';
 })
 export class ContextService {
   selectedInstrument:InstrumentMenu;
-  
+  svgImage:string;
+
   constructor() { 
     this.selectedInstrument = null;
+    this.svgImage = "../assets/images/labeled.png";
   }
 
   public setInstrument(instrument: InstrumentMenu){
@@ -16,5 +18,9 @@ export class ContextService {
 
   public getInstrument():InstrumentMenu{
     return this.selectedInstrument;
+  }
+
+  public isInstrumentSelected():boolean{
+    return this.selectedInstrument!=null;
   }
 }

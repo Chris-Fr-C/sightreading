@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { AbstractInstrumentComponent } from '../abstract-instrument/abstract-instrument.component';
+import { ContextService } from 'src/app/shared/context.service';
+import { GameManagerService } from 'src/app/shared/game-manager.service';
 
 @Component({
   selector: 'app-piano',
@@ -8,8 +10,11 @@ import { AbstractInstrumentComponent } from '../abstract-instrument/abstract-ins
 })
 export class PianoComponent extends AbstractInstrumentComponent implements OnInit {
 
-  constructor() { 
-    super();
+  constructor(context: ContextService, game: GameManagerService) {
+    super(context, game);
   }
+
+
+
 
 }
