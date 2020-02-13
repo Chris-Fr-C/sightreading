@@ -10,6 +10,7 @@ import { ContextService } from './shared/context.service';
 import { Router } from '@angular/router';
 import { PianoComponent } from './core/piano/piano.component';
 import { ViolinComponent } from './core/violin/violin.component';
+import { GameManagerService } from './shared/game-manager.service';
 
 @NgModule({
   declarations: [
@@ -24,7 +25,7 @@ import { ViolinComponent } from './core/violin/violin.component';
     BrowserModule,
     AppRoutingModule,
   ],
-  providers: [ContextService],
+  providers: [ContextService, GameManagerService],
   bootstrap: [AppComponent],
   exports: [AbstractInstrumentComponent]
 })
