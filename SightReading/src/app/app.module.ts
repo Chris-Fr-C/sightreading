@@ -18,7 +18,6 @@ import { GuesserComponent } from './core/guesser/guesser.component';
     AppComponent,
     MenuComponent,
     CoreComponent,
-    AbstractInstrumentComponent,
     PianoComponent,
     ViolinComponent,
     StaffComponent,
@@ -30,6 +29,6 @@ import { GuesserComponent } from './core/guesser/guesser.component';
   ],
   providers: [ContextService, GameManagerService],
   bootstrap: [AppComponent],
-  exports: [AbstractInstrumentComponent]
+  exports: []
 })
 export class AppModule { }

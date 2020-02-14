@@ -1,6 +1,7 @@
-import { Component, OnInit, AfterContentInit } from '@angular/core';
-import { Note, StaffType } from 'src/app/shared/instrument-variables';
+import { AfterContentInit, Component, OnInit } from '@angular/core';
 import { ContextService } from 'src/app/shared/context.service';
+import { AllNotes, StaffType, Note } from 'src/app/shared/instrument-variables';
+import { GameManagerService } from 'src/app/shared/game-manager.service';
 
 @Component({
   selector: 'app-staff',
@@ -9,7 +10,43 @@ import { ContextService } from 'src/app/shared/context.service';
 })
 export class StaffComponent implements OnInit, AfterContentInit {
 
-  constructor(private context:ContextService) { }
+  constructor(private context: ContextService, private game: GameManagerService) {
+    // Subscribing to different game events
+    this.cleanAllNotes();
+
+    // region on new note
+    this.game.eventNewNote.subscribe(
+      (emittedNote: Note) => {
+        // New note generated
+        console.log("Asked for");
+        console.log(emittedNote);
+        for (let note of AllNotes.notes) {
+          let doc: HTMLElement = document.getElementById(note.name);
+          if (doc != null && (emittedNote.name == note.name)) {
+            doc.style.visibility = "visible"
+            console.log("Found note");
+          } else if (doc != null && (emittedNote.name != note.name)) {
+            doc.style.visibility = "hidden";
+          }
+        }
+      }
+    );
+    // endregion on new note
+
+    // region on note check
+    this.game.eventNoteCheck.subscribe((success:boolean)=>{
+      //TODO: add some animation on failures
+      if (success){
+        this.game.askNewNote(this.context.getInstrument());
+      } else {
+
+      }
+
+    });
+    // endregion on note check
+
+  }
+
 
   ngOnInit(): void {
   }
@@ -21,17 +58,17 @@ export class StaffComponent implements OnInit, AfterContentInit {
   ngAfterContentInit(): void {
 
     // Hiding unwanted staff part
-    switch (this.context.getInstrument().staffType){
-      case StaffType.HIGH :
+    switch (this.context.getInstrument().staffType) {
+      case StaffType.HIGH:
         let staffLow = document.getElementById("low");
         if (staffLow != null) {
-          staffLow.style.display = "none";
+          staffLow.style.visibility = "hidden";
         }
-      break;
-      case StaffType.LOW :
+        break;
+      case StaffType.LOW:
         let staffHigh = document.getElementById("high");
         if (staffHigh != null) {
-          staffHigh.style.display = "none";
+          staffHigh.style.visibility = "hidden";
         }
         break;
       default:
@@ -39,16 +76,19 @@ export class StaffComponent implements OnInit, AfterContentInit {
     }
 
     // We must link each svg note to the corresponding click event.
-    for (const note in Note) {
-      // Initialy hiding the notes, waiting for the game manager to tell which note should be seen.
-      if (Note.hasOwnProperty(note)) {
-        let obj = document.getElementById(Note[note].toString());
-        if (obj != null) {
-          obj.style.display = "none";
-        }
+
+  }
+
+  private cleanAllNotes(): void {
+    for (const note of AllNotes.notes) {
+      let obj = document.getElementById(note.name);
+      if (obj != null) {
+        obj.style.visibility = "hidden";
       }
     }
   }
 
-
 }
+
+
+

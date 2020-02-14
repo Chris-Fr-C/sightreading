@@ -1,7 +1,20 @@
-<p>core works!</p>
+<a [routerLink]="['/menu']">Change instrument</a>
 <app-staff></app-staff>
 <div class="div" [ngSwitch]="context.getInstrument().type">
-        <div *ngSwitchCase="typesEnum.PIANO"><app-piano></app-piano></div>
-        <div *ngSwitchCase="typesEnum.VIOLIN"><app-violin></app-violin></div>
+        <div *ngSwitchCase="typesEnum.PIANO">
+                <app-piano></app-piano>
+        </div>
+        <div *ngSwitchCase="typesEnum.VIOLIN">
+                <app-violin></app-violin>
+        </div>
+        <div *ngSwitchCase="typesEnum.GUESSER">
+                <app-guesser></app-guesser>
+        </div>
         <div *ngSwitchDefault>Instrument not found : {{context.getInstrument().type}}</div>
+</div>
+
+<div class="row">
+        <div class="col-sm-1">
+                Streak : {{game.streakAmount}}
+        </div>
 </div>

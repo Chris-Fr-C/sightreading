@@ -1,10 +1,292 @@
-<div class="row">
-    <!-- Instrument position -->
+<!-- Instrument position -->
 
-</div>
 
-<div class="row">
-    <div class="col-sm-1">
-        Average time : {{game.averageTime}}
-    </div>
-</div>
+<svg xml:space="preserve" width="161px" height="120">
+
+    <!-- 
+         Copyright (c)  2005 Lauri Kaila.
+         Permission is granted to copy, distribute and/or modify this document
+         under the terms of the GNU Free Documentation License, Version 1.2
+         or any later version published by the Free Software Foundation;
+         with no Invariant Sections, no Front-Cover Texts, and no Back-Cover Texts.
+         A copy of the license is included in the section entitled "GNU
+         Free Documentation License".
+         
+         
+         
+         Intented to create a keyboard where key widths are
+         accurately in position. 
+         
+         See http://www.mathpages.com/home/kmath043.htm
+         for the math.
+         
+         This keyboard has following properties (x=octave width).
+         1. All white keys have equal width in front (W=x/7).
+         2. All black keys have equal width (B=x/12).
+         3. The narrow part of white keys C, D and E is W - B*2/3
+         4. The narrow part of white keys F, G, A, and B is W - B*3/4
+         
+    -->
+    <!-- White keys  -->
+    <!-- C -->
+    <rect id="NC2" class="key regular" style="stroke:black" x="0" y="0" width="23" height="120"
+        (click)=" onClickNote('C2')" />
+    <!-- D -->
+    <rect id="ND2" class="key regular" style="stroke:black" x="23" y="0" width="23" height="120"
+        (click)=" onClickNote('D2')" />
+    <!-- E -->
+    <rect id="NE2" class="key regular" style="stroke:black" x="46" y="0" width="23" height="120"
+        (click)=" onClickNote('E2')" />
+    <!-- F -->
+    <rect id="NF2" class="key regular" style="stroke:black" x="69" y="0" width="23" height="120"
+        (click)=" onClickNote('F2')" />
+    <!-- G -->
+    <rect id="NG2" class="key regular" style="stroke:black" x="92" y="0" width="23" height="120"
+        (click)=" onClickNote('G2')" />
+    <!-- A -->
+    <rect id="NA2" class="key regular" style="stroke:black" x="115" y="0" width="23" height="120"
+        (click)=" onClickNote('A2')" />
+    <!-- B -->
+    <rect id="NB2" class="key regular" style="stroke:black" x="138" y="0" width="23" height="120"
+        (click)=" onClickNote('B2')" />
+
+    <!-- Black keys (overlap with the white keys) -->
+    <!-- C# -->
+    <rect id="NCs2" class="key sharp" style="stroke:black" x="14.33333" y="0" width="13" height="80"
+        (click)=" onClickNote('Cs2')" />
+    <!-- D# -->
+    <rect id="NDs2" class="key sharp" style="stroke:black" x="41.66666" y="0" width="13" height="80"
+        (click)=" onClickNote('Ds2')" />
+    <!-- F# -->
+    <rect id="NFs2" class="key sharp" style="stroke:black" x="82.25" y="0" width="13" height="80"
+        (click)=" onClickNote('Fs2')" />
+    <!-- G# -->
+
+
+    <rect id="NGs2" class="key sharp" style="stroke:black" x="108.25" y="0" width="13" height="80"
+        (click)=" onClickNote('Gs2')" />
+    <!-- A# -->
+    <rect id="NAs2" class="key sharp" style="stroke:black" x="134.75" y="0" width="13" height="80"
+        (click)=" onClickNote('As2')" />
+</svg>
+
+
+<svg xml:space="preserve" width="161px" height="120">
+    <!-- White keys  -->
+    <!-- C -->
+    <rect id="NC3" class="key regular" style="stroke:black" x="0" y="0" width="23" height="120"
+        (click)=" onClickNote('C3')" />
+    <!-- D -->
+    <rect id="ND3" class="key regular" style="stroke:black" x="23" y="0" width="23" height="120"
+        (click)=" onClickNote('D3')" />
+    <!-- E -->
+    <rect id="NE3" class="key regular" style="stroke:black" x="46" y="0" width="23" height="120"
+        (click)=" onClickNote('E3')" />
+    <!-- F -->
+    <rect id="NF3" class="key regular" style="stroke:black" x="69" y="0" width="23" height="120"
+        (click)=" onClickNote('F3')" />
+    <!-- G -->
+    <rect id="NG3" class="key regular" style="stroke:black" x="92" y="0" width="23" height="120"
+        (click)=" onClickNote('G3')" />
+    <!-- A -->
+    <rect id="NA3" class="key regular" style="stroke:black" x="115" y="0" width="23" height="120"
+        (click)=" onClickNote('A3')" />
+    <!-- B -->
+    <rect id="NB3" class="key regular" style="stroke:black" x="138" y="0" width="23" height="120"
+        (click)=" onClickNote('B3')" />
+
+    <!-- Black keys (overlap with the white keys) -->
+    <!-- C# -->
+    <rect id="NCs3" class="key sharp" style="stroke:black" x="14.33333" y="0" width="13" height="80"
+        (click)=" onClickNote('Cs3')" />
+    <!-- D# -->
+    <rect id="NDs3" class="key sharp" style="stroke:black" x="41.66666" y="0" width="13" height="80"
+        (click)=" onClickNote('Ds3')" />
+    <!-- F# -->
+    <rect id="NFs3" class="key sharp" style="stroke:black" x="82.25" y="0" width="13" height="80"
+        (click)=" onClickNote('Fs3')" />
+    <!-- G# -->
+
+
+    <rect id="NGs3" class="key sharp" style="stroke:black" x="108.25" y="0" width="13" height="80"
+        (click)=" onClickNote('Gs3')" />
+    <!-- A# -->
+    <rect id="NAs3" class="key sharp" style="stroke:black" x="134.75" y="0" width="13" height="80"
+        (click)=" onClickNote('As3')" />
+</svg>
+
+
+<svg xml:space="preserve" width="161px" height="120">
+    <!-- White keys  -->
+    <!-- C -->
+    <rect id="NC3" class="key regular" style="stroke:black" x="0" y="0" width="23" height="120"
+        (click)=" onClickNote('C3')" />
+    <!-- D -->
+    <rect id="ND3" class="key regular" style="stroke:black" x="23" y="0" width="23" height="120"
+        (click)=" onClickNote('D3')" />
+    <!-- E -->
+    <rect id="NE3" class="key regular" style="stroke:black" x="46" y="0" width="23" height="120"
+        (click)=" onClickNote('E3')" />
+    <!-- F -->
+    <rect id="NF3" class="key regular" style="stroke:black" x="69" y="0" width="23" height="120"
+        (click)=" onClickNote('F3')" />
+    <!-- G -->
+    <rect id="NG3" class="key regular" style="stroke:black" x="92" y="0" width="23" height="120"
+        (click)=" onClickNote('G3')" />
+    <!-- A -->
+    <rect id="NA3" class="key regular" style="stroke:black" x="115" y="0" width="23" height="120"
+        (click)=" onClickNote('A3')" />
+    <!-- B -->
+    <rect id="NB3" class="key regular" style="stroke:black" x="138" y="0" width="23" height="120"
+        (click)=" onClickNote('B3')" />
+
+    <!-- Black keys (overlap with the white keys) -->
+    <!-- C# -->
+    <rect id="NCs3" class="key sharp" style="stroke:black" x="14.33333" y="0" width="13" height="80"
+        (click)=" onClickNote('Cs3')" />
+    <!-- D# -->
+    <rect id="NDs3" class="key sharp" style="stroke:black" x="41.66666" y="0" width="13" height="80"
+        (click)=" onClickNote('Ds3')" />
+    <!-- F# -->
+    <rect id="NFs3" class="key sharp" style="stroke:black" x="82.25" y="0" width="13" height="80"
+        (click)=" onClickNote('Fs3')" />
+    <!-- G# -->
+    <rect id="NGs3" class="key sharp" style="stroke:black" x="108.25" y="0" width="13" height="80"
+        (click)=" onClickNote('Gs3')" />
+    <!-- A# -->
+    <rect id="NAs3" class="key sharp" style="stroke:black" x="134.75" y="0" width="13" height="80"
+        (click)=" onClickNote('As3')" />
+</svg>
+
+
+<!-- Instrument position -->
+<svg xml:space="preserve" width="161px" height="120">
+
+    <!-- White keys  -->
+    <!-- C -->
+    <rect id="NC4" class="key regular" style="stroke:black" x="0" y="0" width="23" height="120"
+        (click)=" onClickNote('C4')" />
+    <!-- D -->
+    <rect id="ND4" class="key regular" style="stroke:black" x="23" y="0" width="23" height="120"
+        (click)=" onClickNote('D4')" />
+    <!-- E -->
+    <rect id="NE4" class="key regular" style="stroke:black" x="46" y="0" width="23" height="120"
+        (click)=" onClickNote('E4')" />
+    <!-- F -->
+    <rect id="NF4" class="key regular" style="stroke:black" x="69" y="0" width="23" height="120"
+        (click)=" onClickNote('F4')" />
+    <!-- G -->
+    <rect id="NG4" class="key regular" style="stroke:black" x="92" y="0" width="23" height="120"
+        (click)=" onClickNote('G4')" />
+    <!-- A -->
+    <rect id="NA4" class="key regular" style="stroke:black" x="115" y="0" width="23" height="120"
+        (click)=" onClickNote('A4')" />
+    <!-- B -->
+    <rect id="NB4" class="key regular" style="stroke:black" x="138" y="0" width="23" height="120"
+        (click)=" onClickNote('B4')" />
+
+    <!-- Black keys (overlap with the white keys) -->
+    <!-- C# -->
+    <rect id="NCs4" class="key sharp" style="stroke:black" x="14.33333" y="0" width="13" height="80"
+        (click)=" onClickNote('Cs4')" />
+    <!-- D# -->
+    <rect id="NDs4" class="key sharp" style="stroke:black" x="41.66666" y="0" width="13" height="80"
+        (click)=" onClickNote('Ds4')" />
+    <!-- F# -->
+    <rect id="NFs4" class="key sharp" style="stroke:black" x="82.25" y="0" width="13" height="80"
+        (click)=" onClickNote('Fs4')" />
+    <!-- G# -->
+    <rect id="NGs4" class="key sharp" style="stroke:black" x="108.25" y="0" width="13" height="80"
+        (click)=" onClickNote('Gs4')" />
+    <!-- A# -->
+    <rect id="NAs4" class="key sharp" style="stroke:black" x="134.75" y="0" width="13" height="80"
+        (click)=" onClickNote('As4')" />
+</svg>
+
+<!-- New octave -->
+<svg xml:space="preserve" width="161px" height="120">
+
+    <!-- White keys  -->
+    <!-- C -->
+    <rect id="NC5" class="key regular" style="stroke:black" x="0" y="0" width="23" height="120"
+        (click)=" onClickNote('C5')" />
+    <!-- D -->
+    <rect id="ND5" class="key regular" style="stroke:black" x="23" y="0" width="23" height="120"
+        (click)=" onClickNote('D5')" />
+    <!-- E -->
+    <rect id="NE5" class="key regular" style="stroke:black" x="46" y="0" width="23" height="120"
+        (click)=" onClickNote('E5')" />
+    <!-- F -->
+    <rect id="NF5" class="key regular" style="stroke:black" x="69" y="0" width="23" height="120"
+        (click)=" onClickNote('F5')" />
+    <!-- G -->
+    <rect id="NG5" class="key regular" style="stroke:black" x="92" y="0" width="23" height="120"
+        (click)=" onClickNote('G5')" />
+    <!-- A -->
+    <rect id="NA5" class="key regular" style="stroke:black" x="115" y="0" width="23" height="120"
+        (click)=" onClickNote('A5')" />
+    <!-- B -->
+    <rect id="NB5" class="key regular" style="stroke:black" x="138" y="0" width="23" height="120"
+        (click)=" onClickNote('B5')" />
+
+    <!-- Black keys (overlap with the white keys) -->
+    <!-- C# -->
+    <rect id="NCs5" class="key sharp" style="stroke:black" x="14.33333" y="0" width="13" height="80"
+        (click)=" onClickNote('Cs5')" />
+    <!-- D# -->
+    <rect id="NDs5" class="key sharp" style="stroke:black" x="41.66666" y="0" width="13" height="80"
+        (click)=" onClickNote('Ds5')" />
+    <!-- F# -->
+    <rect id="NFs5" class="key sharp" style="stroke:black" x="82.25" y="0" width="13" height="80"
+        (click)=" onClickNote('Fs5')" />
+    <!-- G# -->
+    <rect id="NGs5" class="key sharp" style="stroke:black" x="108.25" y="0" width="13" height="80"
+        (click)=" onClickNote('Gs5')" />
+    <!-- A# -->
+    <rect id="NAs5" class="key sharp" style="stroke:black" x="134.75" y="0" width="13" height="80"
+        (click)=" onClickNote('As5')" />
+</svg>
+
+
+<!-- New octave -->
+<svg xml:space="preserve" width="161px" height="120">
+    <!-- White keys  -->
+    <!-- C -->
+    <rect id="NC6" class="key regular" style="stroke:black" x="0" y="0" width="23" height="120"
+        (click)=" onClickNote('C6')" />
+    <!-- D -->
+    <rect id="ND6" class="key regular" style="stroke:black" x="23" y="0" width="23" height="120"
+        (click)=" onClickNote('D6')" />
+    <!-- E -->
+    <rect id="NE6" class="key regular" style="stroke:black" x="46" y="0" width="23" height="120"
+        (click)=" onClickNote('E6')" />
+    <!-- F -->
+    <rect id="NF6" class="key regular" style="stroke:black" x="69" y="0" width="23" height="120"
+        (click)=" onClickNote('F6')" />
+    <!-- G -->
+    <rect id="NG6" class="key regular" style="stroke:black" x="92" y="0" width="23" height="120"
+        (click)=" onClickNote('G6')" />
+    <!-- A -->
+    <rect id="NA6" class="key regular" style="stroke:black" x="115" y="0" width="23" height="120"
+        (click)=" onClickNote('A6')" />
+    <!-- B -->
+    <rect id="NB6" class="key regular" style="stroke:black" x="138" y="0" width="23" height="120"
+        (click)=" onClickNote('B6')" />
+
+    <!-- Black keys (overlap with the white keys) -->
+    <!-- C# -->
+    <rect id="NCs6" class="key sharp" style="stroke:black" x="14.33333" y="0" width="13" height="80"
+        (click)=" onClickNote('Cs6')" />
+    <!-- D# -->
+    <rect id="NDs6" class="key sharp" style="stroke:black" x="41.66666" y="0" width="13" height="80"
+        (click)=" onClickNote('Ds6')" />
+    <!-- F# -->
+    <rect id="NFs6" class="key sharp" style="stroke:black" x="82.25" y="0" width="13" height="80"
+        (click)=" onClickNote('Fs6')" />
+    <!-- G# -->
+    <rect id="NGs6" class="key sharp" style="stroke:black" x="108.25" y="0" width="13" height="80"
+        (click)=" onClickNote('Gs6')" />
+    <!-- A# -->
+    <rect id="NAs6" class="key sharp" style="stroke:black" x="134.75" y="0" width="13" height="80"
+        (click)=" onClickNote('As6')" />
+</svg>
