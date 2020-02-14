@@ -14,6 +14,7 @@ export class MenuComponent implements OnInit {
   AVAILABLE_INSTRUMENTS: Array<InstrumentMenu> = [
     {type:InstrumentType.PIANO, iconImage:"../assets/images/icon_piano.svg", staffType:StaffType.BOTH, notesRange:[Note.A2,Note.G6]},
     {type:InstrumentType.VIOLIN, iconImage:"../assets/images/icon_violin.svg", staffType: StaffType.HIGH, notesRange:[Note.C4,Note.G6]},
+    {type:InstrumentType.GUESSER, iconImage:"../assets/images/icon_guesser.svg", staffType: StaffType.BOTH, notesRange:[Note.A2,Note.G6]},
   ];
 
   constructor(private context: ContextService, private router: Router) {}

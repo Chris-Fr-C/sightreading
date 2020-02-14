@@ -16,7 +16,8 @@ export enum StaffType {
 
 export enum InstrumentType {
     PIANO="piano",
-    VIOLIN="violin"
+    VIOLIN="violin",
+    GUESSER="guesser"
 }
 
 

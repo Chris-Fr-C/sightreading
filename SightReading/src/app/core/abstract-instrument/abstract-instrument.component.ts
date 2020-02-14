@@ -24,21 +24,16 @@ export class AbstractInstrumentComponent implements OnInit, AfterViewInit {
 
   ngAfterViewInit(): void {
 
-    // We must link each svg note to the corresponding click event.
-    for (const note in Note) {
-      // Initialy hiding the notes, waiting for the game manager to tell which note should be seen.
-      if (Note.hasOwnProperty(note)) {
-        let obj = document.getElementById(Note[note].toString());
-        if (obj != null) {
-          obj.style.display = "none";
-        }
-      }
-    }
-
   }
 
+  /**
+   * Handles the clicking event of the user, interacting with the game manager. 
+   * @param noteName 
+   */
   public onClickNote(noteName: Note) {
+    // TODO: Debug to delete
     console.log("Clicked on : " + noteName + " which corresponds to " + Note[noteName]);
   }
+
 
 }

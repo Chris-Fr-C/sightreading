@@ -10,6 +10,7 @@ import { MenuComponent } from './menu/menu.component';
 import { ContextService } from './shared/context.service';
 import { GameManagerService } from './shared/game-manager.service';
 import { StaffComponent } from './core/staff/staff.component';
+import { GuesserComponent } from './core/guesser/guesser.component';
 
 
 @NgModule({
@@ -20,7 +21,8 @@ import { StaffComponent } from './core/staff/staff.component';
     AbstractInstrumentComponent,
     PianoComponent,
     ViolinComponent,
-    StaffComponent
+    StaffComponent,
+    GuesserComponent
   ],
   imports: [
     BrowserModule,
