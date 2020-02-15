@@ -14,19 +14,19 @@ export class MenuComponent implements OnInit {
   AVAILABLE_INSTRUMENTS: Array<InstrumentMenu> = [
     {
       type: InstrumentType.PIANO,
-      iconImage: "../assets/images/icon_piano.svg",
+      iconImage: "./assets/images/icon_piano.svg",
       staffType: StaffType.BOTH,
       notesRange: [AllNotes.getNote("D2"), AllNotes.getNote("B6")]
     },
     {
       type: InstrumentType.VIOLIN,
-      iconImage: "../assets/images/icon_violin.svg",
+      iconImage: "./assets/images/icon_violin.svg",
       staffType: StaffType.HIGH,
       notesRange: [AllNotes.getNote("C4"), AllNotes.getNote("B6")]
     },
     {
       type: InstrumentType.GUESSER,
-      iconImage: "../assets/images/icon_guesser.svg",
+      iconImage: "./assets/images/icon_guesser.svg",
       staffType: StaffType.BOTH,
       notesRange: [AllNotes.getNote("D2"), AllNotes.getNote("B6")]
     },
