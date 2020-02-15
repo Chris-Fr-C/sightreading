@@ -1,0 +1,31 @@
+rect.key.sharp:hover {
+  fill:lightblue;
+}
+
+rect.key.sharp:active {
+  fill:darkblue;
+}
+
+rect.key.regular:hover {
+  fill: lightblue;
+}
+
+rect.key.regular:active {
+  fill: darkblue;
+}
+rect.key.regular{
+  fill:white;
+}
+rect.key.sharp{
+  fill:black;
+}
+
+rect.key.error {
+  fill:red !important;
+  transition: fill 2s ease !important;
+}
+
+text.keyText {
+  pointer-events:none;
+}
+

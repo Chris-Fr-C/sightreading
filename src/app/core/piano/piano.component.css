@@ -1,17 +1,17 @@
 rect.key.sharp:hover {
-    fill:lightgrey;
+    fill:lightblue;
 }
 
 rect.key.sharp:active {
-    fill:darkgray;
+    fill:darkblue;
 }
 
 rect.key.regular:hover {
-    fill: lightgray;
+    fill: lightblue;
 }
 
 rect.key.regular:active {
-    fill: darkgray;
+    fill: darkblue;
 }
 rect.key.regular{
     fill:white;
@@ -19,6 +19,15 @@ rect.key.regular{
 rect.key.sharp{
     fill:black;
 }
+
+rect.key.refC{
+  fill: lightgrey;
+}
+
+text.keyText {
+  pointer-events:none;
+}
+
 
 rect.key.error {
     fill:red !important;
